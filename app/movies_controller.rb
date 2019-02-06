@@ -77,7 +77,7 @@ def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
   movie = Movie.all.find_by(title: 'Wat')
-  binding.pry
+  #binding.pry
   movie.update(title: 'Wat, huh?')
 end
 
